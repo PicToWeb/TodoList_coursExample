@@ -22,4 +22,9 @@ export class TodoItemComponent {
   onRemove() {
     this.remove.emit(this.todo.id);
   }
+
+  onToggleValidation():void{
+    this.onToggleCompletion();
+
+  }
 }

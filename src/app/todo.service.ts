@@ -33,8 +33,6 @@ export class TodoService {
   }
 
 
-
-
   toggleTodoCompletion(id: number) {
     this.todos = this.todos.map(todo =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
